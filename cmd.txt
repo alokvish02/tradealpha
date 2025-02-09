@@ -1,0 +1,9 @@
+npm init -y
+
+  cd ../frontend
+  npx create-react-app .
+  npm install axios
+
+cd backend
+npm init -y
+npm install express axios ws mysql
