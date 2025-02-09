@@ -1,0 +1,138 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+/* Table Styling */
+.crypto-table {
+  margin-top: 2rem;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.crypto-table th {
+  padding: 14px;
+  background-color: #3d886b;
+  color: white;
+  border: 1px solid #fff;
+  font-size: 16px;
+}
+
+.crypto-table td {
+  padding: 14px;
+  border: 1px solid #34495e;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+.crypto-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Control Buttons */
+.control-buttons {
+  margin: 20px 0;
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #7f8c8d;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+/* Crypto Selection Buttons */
+.crypto-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.crypto-selection button {
+  background-color: #27ae60;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.crypto-selection button:hover {
+  background-color: #218c53;
+}
+
+/* Chart Container */
+.chart-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.chart-container p {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .crypto-table {
+    width: 95%;
+  }
+
+  .crypto-selection {
+    gap: 6px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
